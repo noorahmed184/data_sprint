@@ -17,44 +17,6 @@ The analysis identified clear patterns in Olist's sales performance, including c
 
 ---
 
-## File Directory
-
-```text
-Olist-Sales-Performance/
-│
-├── README.md
-│
-├── Data/
-│   ├── Original_Data/
-│   │   ├── olist_orders_dataset.csv
-│   │   ├── olist_order_items_dataset.csv
-│   │   ├── olist_order_payments_dataset.csv
-│   │   ├── olist_order_reviews_dataset.csv
-│   │   ├── olist_customers_dataset.csv
-│   │   ├── olist_sellers_dataset.csv
-│   │   ├── olist_products_dataset.csv
-│   │   └── product_category_name_translation.csv
-│   │
-│   └── Cleaned_Data/
-│       └── [final_cleaned_dataset.csv]
-│
-├── Code/
-│   ├── 01_Data_Collection/
-│   ├── 02_Data_Cleaning/
-│   ├── 03_EDA/
-│   └── 04_Modeling/
-│       └── Not applicable
-│
-├── Presentation/
-│   ├── Olist_Sales_Performance.pdf
-│   └── Images/
-│
-└── Scratch/
-    └── [exploratory work and unused analysis]
-```
-
----
-
 # Data and Data Dictionary
 
 ## Data Source
