@@ -31,25 +31,13 @@ The dataset contains information about orders, customers, sellers, products, pay
 ---
 
 ## Dataset Overview
-
-| Dataset                             | Description                                          |
-| ----------------------------------- | ---------------------------------------------------- |
-| `olist_orders_dataset`              | Order status and timestamps                          |
-| `olist_order_items_dataset`         | Products purchased within each order and item prices |
-| `olist_order_payments_dataset`      | Payment methods, installments, and payment values    |
-| `olist_order_reviews_dataset`       | Customer review information                          |
-| `olist_customers_dataset`           | Customer identifiers and geographic information      |
-| `olist_sellers_dataset`             | Seller identifiers and geographic information        |
-| `olist_products_dataset`            | Product characteristics                              |
-| `product_category_name_translation` | Portuguese-to-English product category translation   |
-
 The Olist dataset contains approximately **100,000 orders**, with multiple records associated with individual orders because one order can contain multiple products and payment transactions.
 
 ---
 
 # Final Cleaned Dataset
 
-The final analytical dataset combines relevant information from the original Olist tables to support sales-performance analysis.
+The final analytical dataset combines relevant information from the original Olist tables to support sales-performance analysis, focused on Jan 2017 - Aug 2018 period.
 
 ### Key Features
 
@@ -99,28 +87,6 @@ The final analytical dataset combines relevant information from the original Oli
 
 ---
 
-# Engineered Features
-
-Several features were created during the cleaning and EDA process to make the data more useful for sales analysis.
-
-| Feature                    | Description                                        |
-| -------------------------- | -------------------------------------------------- |
-| `sales`                    | Product price used as the sales value for the item |
-| `year`                     | Year extracted from the order purchase date        |
-| `month`                    | Month extracted from the order purchase date       |
-| `month_name`               | Name of the purchase month                         |
-| `weekday`                  | Day of the week when the order was placed          |
-| `hour`                     | Hour when the order was placed                     |
-| `quarter`                  | Quarter of the year                                |
-| `delivery_days`            | Number of days between purchase and delivery       |
-| `product_category_english` | Translated English product category                |
-| `order_total`              | Total value associated with an order               |
-| `AOV`                      | Average Order Value                                |
-
-*The exact features included should match the final cleaned CSV submitted with the project.*
-
----
-
 # Exploratory Data Analysis
 
 The analysis focuses on answering the client's key sales-performance questions.
@@ -132,16 +98,14 @@ The analysis examines:
 * Total sales
 * Number of orders
 * Number of customers
-* Number of sellers
-* Average Order Value (AOV)
-* Sales growth over time
+* Sales growth over time 610.3%
 
 ### Key Findings
 
-* Total sales: **[INSERT VALUE]**
-* Total orders: **[INSERT VALUE]**
-* Average Order Value: **[INSERT VALUE]**
-* Sales growth from the first month to the final month: **[INSERT %]**
+* Total sales: **[13.5 million]**
+* Total orders: **[99 thousand]**
+* Average Order Value: **[92 thousand]**
+* Sales growth from the first month to the final month: **[610.3 %]**
 
 ---
 
@@ -153,10 +117,9 @@ The analysis found that sales generally increased as the marketplace developed, 
 
 ### Key Findings
 
-* Highest-sales month: **[INSERT MONTH/YEAR]**
-* Lowest-sales month: **[INSERT MONTH/YEAR]**
-* Highest-sales year: **[INSERT YEAR]**
-* Overall growth from the first month to the final month: **[INSERT %]**
+* Highest-sales month: **[November]**
+* Lowest-sales month: **[January]**
+* Highest-sales year: **[2018]**
 
 Seasonal patterns were also examined to identify periods of particularly strong or weak customer demand.
 
@@ -167,16 +130,11 @@ Seasonal patterns were also examined to identify periods of particularly strong 
 Customer activity was analyzed using order counts and purchasing behavior.
 
 The analysis examines:
-
-* Number of unique customers
-* Orders per customer
-* Repeat-purchase behavior
 * Average order value
-* Customer geographic distribution
 
 ### Key Finding
 
-**[INSERT YOUR MAIN CUSTOMER INSIGHT]**
+**[Growth Came From More Orders, Not Bigger Baskets]**
 
 ---
 
@@ -213,9 +171,8 @@ The analysis examines:
 
 ### Key Findings
 
-* Highest-sales weekday: **[INSERT DAY]**
-* Peak purchasing hour: **[INSERT HOUR]**
-* Lowest-sales period: **[INSERT PERIOD]**
+* Highest-sales weekday: **[Monday]**
+* Peak purchasing hour: **[Morning at 10am]**
 
 These patterns can help Olist optimize marketing campaigns and promotional timing.
 
@@ -263,25 +220,21 @@ The analysis shows that Olist's sales performance is influenced by several facto
 
 ### Recommendations
 
-**1. Focus marketing during high-demand periods**
+1- To increase the AOV: Create product bundles
 
-Olist should concentrate promotional campaigns and marketing activity around periods with consistently higher customer demand.
+2- To incraese Revenues: Focus on Retention (Repeat Buyers), As we have 92K customers but 99K orders.
 
-**2. Prioritize high-performing product categories**
+3- Target the Monday/Tuesday Afternoon Shoppers 
 
-Resources should be directed toward categories generating the highest sales, while lower-performing categories should be investigated to determine whether the issue is demand, pricing, product availability, or seller participation.
+ 4- Launch a "Black November" campaign, give your 92K existing customers early access, and promote high value bundles.
 
-**3. Use customer purchasing patterns to improve promotions**
+5- Prioritize seller recruitment in states with low seller coverage.
 
-Understanding when customers purchase and how much they spend can help Olist design more targeted promotions and campaigns.
+6- Provide onboarding incentives for new sellers.
 
-**4. Identify geographic expansion opportunities**
+7- Focus marketing and inventory efforts on the product categories that generate the highest sales.
 
-States with strong customer demand but relatively low seller presence may represent opportunities to attract additional sellers and improve product availability.
-
-**5. Encourage repeat purchases**
-
-Customer purchasing behavior should be monitored to identify opportunities for retention campaigns, personalized recommendations, and incentives that encourage customers to return to the marketplace.
+8-Monitor the impact of discounts, vouchers, and installments to identify which strategies are associated with better sales performance
 
 ---
 
@@ -290,10 +243,8 @@ Customer purchasing behavior should be monitored to identify opportunities for r
 Future analysis could investigate:
 
 * Customer retention and repeat-purchase rates
-* Customer lifetime value
 * Seller performance and seller retention
 * Profitability rather than sales revenue alone
-* Impact of freight costs on purchasing behavior
 * Relationship between delivery performance and customer reviews
 * Product pricing and demand
 * Discounts and promotional effects
@@ -302,20 +253,6 @@ Future analysis could investigate:
 * Marketplace commission/revenue modeling
 
 A future project could also develop predictive models to forecast sales or classify customers based on purchasing behavior.
-
----
-
-# Important Visualizations
-
-The following visualizations highlight the main findings from the analysis:
-
-1. **Monthly Sales Trend** – shows how sales changed throughout the Olist data period.
-2. **Sales Growth from First to Final Month** – demonstrates the overall change in sales performance.
-3. **Sales by Product Category** – identifies the categories generating the greatest sales.
-4. **Sales by Weekday** – identifies the strongest purchasing days.
-5. **Sales by Hour** – identifies peak purchasing periods.
-6. **Sales by Brazilian State** – highlights geographic differences in marketplace performance.
-7. **Payment Method Distribution** – shows how customers pay for purchases.
 
 ---
 
