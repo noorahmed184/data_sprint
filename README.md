@@ -149,11 +149,6 @@ The analysis compares categories based on:
 * Average item price
 * Customer demand
 
-### Key Findings
-
-* Top category by sales: **[INSERT CATEGORY]**
-* Top category by number of items/orders: **[INSERT CATEGORY]**
-* Lowest-performing category: **[INSERT CATEGORY]**
 
 These differences indicate that sales volume and sales value do not necessarily follow the same pattern across categories.
 
@@ -189,12 +184,6 @@ The analysis examines:
 * Seller concentration
 * States with customers but limited seller presence
 
-### Key Finding
-
-**[INSERT MAIN GEOGRAPHIC INSIGHT]**
-
----
-
 ## 7. Payment and Purchasing Behavior
 
 Payment information was analyzed to understand how customers pay for their purchases.
@@ -205,12 +194,6 @@ The analysis examines:
 * Payment values
 * Installment behavior
 * Relationship between payment methods and order value
-
-### Key Findings
-
-* Most common payment method: **[INSERT METHOD]**
-* Most common number of installments: **[INSERT NUMBER]**
-* Average payment/order value: **[INSERT VALUE]**
 
 ---
 
@@ -260,7 +243,6 @@ A future project could also develop predictive models to forecast sales or class
 
 * Olist Brazilian E-Commerce Public Dataset — Kaggle
 * Olist dataset documentation and original dataset tables
-* Any additional external sources used for market or business context: **[ADD SOURCES HERE]**
 
 ---
 
